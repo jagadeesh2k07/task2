@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body class="login-page">
+
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="page-wrap">
+
+    <div class="card" id="card">
+
+      <div class="card-blob"></div>
+
+      <div class="card-header">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <h1 class="card-title">Welcome back</h1>
+        <p class="card-sub">Sign in to continue</p>
+      </div>
+
+      <form id="loginForm" novalidate>
+
+        <div class="field" id="grp-email">
+          <label for="email">Email</label>
+          <div class="input-box">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="you@example.com" autocomplete="email"/>
+          </div>
+          <span class="err" id="err-email"></span>
+        </div>
+
+        <div class="field" id="grp-pass">
+          <label for="password">
+            Password
+            <a href="#" class="forgot" onclick="forgotPw(event)">Forgot password?</a>
+          </label>
+          <div class="input-box">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="••••••••" autocomplete="current-password"/>
+            <button type="button" class="eye-btn" onclick="toggleEye('password','eye1')">
+              <i class="fas fa-eye" id="eye1"></i>
+            </button>
+          </div>
+          <span class="err" id="err-pass"></span>
+        </div>
+
+        <label class="check-label">
+          <input type="checkbox" id="remember"/>
+          <span class="check-box"></span>
+          Keep me signed in
+        </label>
+
+        <button type="submit" class="btn-main" id="loginBtn">
+          <span id="loginTxt">Sign In</span>
+          <span id="loginLoad" class="spin hidden"><i class="fas fa-circle-notch fa-spin"></i></span>
+        </button>
+
+      </form>
+
+      <div class="toast hidden" id="toast"></div>
+
+      <p class="switch">No account? <a href="register.html">Create one</a></p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
