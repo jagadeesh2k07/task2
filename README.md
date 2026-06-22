@@ -6,7 +6,7 @@ ApexPlanet Software Pvt. Ltd. | Full Stack Web Development Internship
 
 ## Live Demo
 
-- [Login Page](https://task2-umber-zeta.vercel.app/)
+Explore the login page [Click here](https://task2-umber-zeta.vercel.app/)
 
 ---
 
