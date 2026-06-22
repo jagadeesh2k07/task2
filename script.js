@@ -114,7 +114,7 @@ function toggleEye(inputId, iconId) {
 
 function forgotPw(e) {
   e.preventDefault();
-  alert('Password reset flow goes here — connect to PHP in Task 3.');
+  alert('Click on create account and create another one');
 }
 
 const TAKEN = ['test@gmail.com', 'admin@site.com', 'user@example.com'];
