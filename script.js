@@ -356,7 +356,7 @@ function updatePwRules(pw) {
     setTimeout(() => {
       setLoad('regBtn', 'regTxt', 'regLoad', false);
       showToast('reg-toast', `✓ Account created! Welcome, ${fn}. Redirecting to sign in…`, 'ok');
-      setTimeout(() => { window.location.href = 'login.html'; }, 2000);
+      setTimeout(() => { window.location.href = 'index.html'; }, 2000);
     }, 1400);
   });
 })();
