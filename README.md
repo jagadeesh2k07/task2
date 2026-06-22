@@ -6,8 +6,7 @@ ApexPlanet Software Pvt. Ltd. | Full Stack Web Development Internship
 
 ## Live Demo
 
-- [Login Page](https://jagadeesh2k07.github.io/task2/login.html)
-- [Register Page](https://jagadeesh2k07.github.io/task2/register.html)
+- [Login Page](https://task2-umber-zeta.vercel.app/)
 
 ---
 
